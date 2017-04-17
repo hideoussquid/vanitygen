@@ -29,7 +29,7 @@
 #include <openssl/ec.h>
 #include <openssl/obj_mac.h>
 
-#include <pcre.h>
+#include </usr/local/Cellar/pcre/8.39/include/pcre.h>
 
 #include "pattern.h"
 #include "util.h"
