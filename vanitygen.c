@@ -313,6 +313,7 @@ usage(const char *name)
 "-1            Stop after first match\n"
 "-N            Generate namecoin address\n"
 "-T            Generate bitcoin testnet address\n"
+"-D            Generate deuscoin address\n"		
 "-X <version>  Generate address with the given version\n"
 "-F <format>   Generate address with the given format (pubkey or script)\n"
 "-P <pubkey>   Specify base public key for piecewise key generation\n"
@@ -393,6 +394,11 @@ main(int argc, char **argv)
 			addrtype = 111;
 			privtype = 239;
 			scriptaddrtype = 196;
+			break;
+		case 'D':
+			addrtype = 30;
+			privtype = 128;
+			scriptaddrtype = 35;
 			break;
 		case 'X':
 			addrtype = atoi(optarg);
